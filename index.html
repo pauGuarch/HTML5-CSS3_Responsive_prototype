@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Just+Another+Hand&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,700&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=IBM+Plex+Serif:ital,wght@1,700&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav id="inici">
+        <!-- <a id="start"></a> -->
+        <img src="./data/images/alliollie_letters_white.jpg" alt="alliollie_white_logo">
+        
+        <div id="sideBarNav" class="sidenav">
+            <div class="icon">
+                <i class="fas fa-times"></i> 
+            </div>     
+            <img id="logo-nav" src="./data/images/alliollie_logo_black.jpg" alt="">       
+            <ul>
+                <li><a href="#inici2" onclick="closeNav()">INICI</a></li>
+                <li><a href="#classes" onclick="closeNav()">CLASSES</a></li>
+                <li><a href="#professors" onclick="closeNav()">PROFESSORS</a></li>
+                <li><a href="#spots" onclick="closeNav()">SPOTS</a></li>
+                <li><a href="#contacte" onclick="closeNav()">CONTACTE</a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <i class="fas fa-bars"></i> 
+        </div>
+    </nav >
+    
+    <header id="inici2">
+        <img src="./data/images/Ana3.jpg">
+        <div id="header-banner" class="headerbanner">
+            <i id="closehdrbtn"class="fas fa-times" onclick="closeBanner()"></i> 
+            <h2 id="msg">CURSOS DE SKATE 2022</h2>
+            <p> Informate'n ja!</p>
+            <input type="text" placeholder=" Introdueix el teu email">
+            <button >¡ENVIA!</button>
+        </div>
+
+        <h1>ALL&OLLIE</h1><br> 
+        <h2 class="tittle">ESCOLA DE SKATE</h2> 
+        <p id="headertxt">Apren skate amb les nostres classes per a nens i adults de forma segura i divertida.</p>
+    </header>
+    
+    <main >
+        
+        <!-- <h2>GAUDEIX, PROGRESSA I APRÈN AMB ALL&OLLIE!</h2>
+        <a href="#contacte"><button type="button" name="button" >APUNTA'T</button></a> -->
+        <div id="classes">
+            <h3>LES NOSTRES CLASSES</h3>
+            <h3>Clases per a nens ,nenes i adolescents </h3>
+            <img src="./data/images/classes_nens3.jpeg" alt="">
+            <p>Classes per a nens de totes les edats i de tots els nivells. Aprèn o millora la teva tècnica fent amics i passant-ho bé. </p>
+            <h3>Classes per a adults i adultes</h3>
+            <img src="./data/images/Anna_Mayte3.JPG" alt="">
+            <p>No importa la edat que tinguis per aprendre a patinar. Aprèn amb nosaltres de forma segura i divertida. </p>
+        </div>
+        <div id="professors">
+            <h3>STAFF  TÈCNIC</h3>            
+            <!-- SLIDESHOW START -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./data/images/roura.JPG" >
+                    <div class="text">
+                        <h3>Jose Manuel Roura</h3>
+                        <h4>Co-director de l’Escola</h4>
+                        <p>Campió d’Espanya Skateboard
+                        Sub-campió d’Europa Skateboard
+                        Director de Lleure educatiu (ROPEC)
+                        Tècnic d’Skateboard (FCP)</p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./data/images/sebas.JPG">
+                    <div class="text">
+                        <h3>Marc Sebastià</h3>
+                        <h4>Co-director de l’Escola</h4>
+                        <p>Conductor d’activitats físico-
+                            esportives en el medi ambient.
+                            Monitor/Dinamitzador de lleure
+                            educatiu (ROPEC)<br>
+                            Tècnic d’Skateboard (FCP)</p>
+                        </div>
+                </div>
+            </div>
+            <!-- SLIDESHOW END -->
+        </div>
+        <div id="spots">
+            <h4>SPOTS</h4>
+            <h4>La Bobila</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.085771999602!2d2.243398515428019!3d41.45905497925759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bb0a8b79e10f%3A0x39dd3615ca2fa2f0!2sB%C3%B2bila%20DIY!5e0!3m2!1sca!2ses!4v1644681045602!5m2!1sca!2ses" width="80%" height="70%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+            <h4>Skatepark de Pomar</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11960.343153028298!2d2.2368324350495064!3d41.459054626635904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bba7a55dcc5d%3A0x7c83e44c1549298b!2sSkatepark%20De%20Pomar!5e0!3m2!1sca!2ses!4v1644681245414!5m2!1sca!2ses" width="80%" height="70%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+    </main>
+    
+    <footer id="contacte">
+        <h1>ALL&OLLIE SKATE ESCOLA</h1>
+        <p>Rep informació de totes les <br>nostres activitats</p>
+        <input type="text" placeholder="Introdueix el teu email">
+        <button >¡ENVIA!</button>
+        <img id="logo-nav" src="./data/images/alliollie_logo_white.jpg" alt=""> 
+        <h3>Xarxes Socials</h3>   
+        <a href="https://www.youtube.com/channel/UC4Xy-EiY0_o8w3Db32zshbA/featured">   
+        <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/alliollie.skatescola/">
+        <i class="fab fa-instagram"></i>
+    </a>
+        <a href="mailto:info@alliollie.cat"><h2>Email: info@alliollie.cat</h2></a>
+    </footer>
+    
+    <!-- <div class="button"><i class="fa-solid fa-circle-arrow-up"></i></div> -->
+</body>
+<a href="#inici">
+<button class="arrowbutton"> &#8593;</button>
+</a>
+<script>
+
+    //Efecto de letras tecleandose
+    const message = 'CURSOS DE SKATE 2022';
+    const typingPromises = (message, timeout) =>
+    [...message].map(
+        (ch, i) =>
+        new Promise(resolve => {
+            setTimeout(() => {
+            resolve(message.substring(0, i + 1));
+            }, timeout * i);
+        })
+    );
+
+    typingPromises(message, 140).forEach(promise => {
+    promise.then(portion => {
+        document.querySelector('h2').innerHTML = portion;
+    });
+    });
+
+
+
+    // menu desplegable movil
+
+    let closeBtn = document.querySelector('.fa-times');
+    let closeBtn2 = document.querySelector('#closehdrbtn');
+    let openBtn = document.querySelector('.fa-bars');
+    let sideBarMenu = document.querySelector('#sideBarNav');
+    let startbutton = document.querySelector('.arrowbutton');
+    let banner = document.querySelector('#header-banner');
+    let sidenav = document.querySelector('.sidenav');
+    let header = document.getElementsByTagName("header");
+
+    // listener para boton de abrir menu
+    openBtn.addEventListener('click', ()=>{
+        sidenav.style.display="block";
+        header.style.filter="blur(px)";
+    })
+    // listener para boton de cerrar menu
+    closeBtn.addEventListener('click', ()=>{
+        sideBarMenu.style.display ="none";  
+    })
+    function closeBanner(){
+        banner.style.display ="none";
+    }
+
+
+
+    //Script slideshow para movil
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous botones
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    //control de carrusel de imagenes
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+        slides[slideIndex-1].style.display = "block";
+    }
+
+    //cerrar nav
+    function closeNav(){
+        if(screen.width<620){
+            sideBarMenu.style.display ="none";
+        }
+    }
+
+    //smoothie efecto
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+
+</script>
+</html>
